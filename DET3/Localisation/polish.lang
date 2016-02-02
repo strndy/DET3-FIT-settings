@@ -1,0 +1,360 @@
+// --------------------- MENU / SETUP / IGNITION... ------------------------------------------------------------------
+IGN_SETUP_WINDOW_NAME = Konfiguracja zaplonu
+IGN_IGNITION_MODE     = Tryb zaplonu
+IGN_IGNITION_GENERAL  = Ogolne
+IGN_MAX_RPM           = Max. RPM
+IGN_NUM_EVENTS_PER_720= Ilosc syg. (720 stopni)
+IGN_MAX_RPM_EVER      = Max zarejstrowane obroty 
+IGN_RESET_RPM         = Zeruj
+IGN_MAX_RETARD        = Max opoznienie zaplonu
+IGN_MAX_ADVANCE       = Max przysp. zaplonu
+
+
+IGN_MODE_0            = Opoznij / Przyspiesz sygnal 60-2
+IGN_MODE_0_DESC       = Ten tryb zap³onu przeznaczony jest do aut z systemem zaplonowym bazujacym na wiencu z 58 zebami i przerwa szeroka na 2 zeby (powszechnie znany jako 60-2). System ten jest bardzo popularny w europejskich samochodach.
+IGN_MODE_1            = Opoznij / Przyspiesz sygnal 36-1
+IGN_MODE_1_DESC       = Ten tryb zap³onu przeznaczony jest do aut z systemem zaplonowym bazujacym na wiencu z 35 zebami i przerwa szeroka na 1 zab (powszechnie znany jako 36-1). System ten powszechnie wykrozystywane jest w fordowskim systemie EDIS.
+IGN_MODE_2            = Opoznij / Przyspiesz sygnal 36-2
+IGN_MODE_2_DESC       = Ten tryb zap³onu przeznaczony jest do aut z systemem zaplonowym bazujacym na wiencu z 34 zebami i przerwa szeroka na 2 zeby (powszechnie znany jako 36-2). Jest stosowany w autach marki Toyota
+IGN_MODE_3            = Opoznij / Przyspiesz sygnal wielozabkowy
+IGN_MODE_3_DESC       = Ten tryb zaplonu stosowany jest w autach z wiencem zebatym na wale korbowym lub walku rozrzadu. Odleglosc katowa pomiedzy wszystkimi zebami musi byc rowna i ilosc zebow wypadajaca na obrot walu wynosi co najmniej 2.
+IGN_MODE_4            = Opoznij sygnal pojedynczy	
+IGN_MODE_4_DESC       = Ten try zap³onu wykorzystywany jest do opozniania zaplonu modyfikujac sygnal sterujacy modulem zaplonowy. Tryb ten dziala na obu zboczach sygnalu, dzeki czemu zachowany jest orginalny czas ladowania cewki. 
+IGN_MODE_5            = Sygnal EDIS SAW
+IGN_MODE_5_DESC       = Ten tryb zap³onu przeznaczony jest do sterowania zaplonem poprzez modyfikacje sygnalu SAW modulu EDIS. 
+IGN_MODE_6            = Nissan QG18DE 18-2-18-2
+IGN_MODE_6_DESC       = Ten tryb zap³onu przeznaczony jest do modyfikacji sygna³u w silniku Nissan 1.8L QG18DE 
+IGN_MODE_7            = Opoznij dwa sygnaly sterujace modulami zaplonowymi
+IGN_MODE_7_DESC       = Ten tryb zap³onu przeznaczony jest do opozniania dwoch sygna³ów steruj¹cych modu³ami zap³onowymi. W tym trybie wejscie/wyjscie czestotliwosciowe wykorzystywane jest dla drugiego sygnalu. Wszystkie funkcje zwiazane z obsluga czestotliwosci sa wylaczone.
+IGN_MODE_8            = Opoznij niesymetryczny sygnal 
+IGN_MODE_8_DESC       = This ignition mode is suitable for retarding non uniform signals.
+IGN_MODE_9            = Subaru 
+IGN_MODE_9_DESC       = Subaru 6 tooth pattern
+IGN_MODE_10           = Honda 12+1
+IGN_MODE_10_DESC      = Honda 12+1 trigger
+IGN_MODE_11           = Oscyloskop
+IGN_MODE_11_DESC      = W tym trybie sygnal z cuzjnika jest kopiowany na wyjscia bez modfikacji. Informacje o przebiegu sygnalu sa zachowywane w pamieci urzadzenia i moga byc odczytane z wykorzystaniem opcji Oscyloskop.
+IGN_MODE_12           = Opoznij / Przyspiesz sygnal 24-1 
+IGN_MODE_12_DESC      = Ten tryb zap³onu przeznaczony jest do aut z systemem zaplonowym bazujacym na wiencu z 24 zebami i przerwa szeroka na 1 zab
+IGN_MODE_13           = Opoznij / Przyspiesz sygnal 60-2 Siemens MS
+IGN_MODE_13_DESC      = Ten tryb zap³onu przeznaczony jest do aut z systemem zaplonowym bazujacym na wiencu z 58 zebami i przerwa szeroka na 2 zeby (powszechnie znany jako 60-2). Ten tryb moze zmieniac kat wyprzedzenia zaplonu do 5 stopni.
+IGN_MODE_14           = EDIS SAW signal absolute
+IGN_MODE_14_DESC      = Ten tryb zaplonu przeznaczony jest do sterowania modulem EDIS i umozliwia bezposrednie ustawienie kata zaplonu w zakresie 50 stopnie przed GMO do 10 stopni za GMP.
+IGN_MODE_15           = Rover 18-1-18-1 signal
+IGN_MODE_15_DESC      = Ten tryb zaplonu przeznaczony jest dla silnikow Rover 18-1-18-1 
+	
+ING_INPUT_CONFIG      = Konfiguracja wejscia Ignition #1 
+ING_INPUT_TYPE        = Tryb wejsioia Ignition #1 
+IGN_INPUT_TYPE_0      = Czujnik indukcyjny (adaptive threshold)
+IGN_INPUT_TYPE_0_DESC = Tryb wejscia wykorzystywany do obslugi czujnikow indukcyjnych. Dzieki detekcji przejscia sygnalu przez zero i adaptacyjnej histerezie ten tryb wejscia jest szczegolnie odporny na zaklocenia.
+IGN_INPUT_TYPE_1      = Czujnik indukcyjny  (fixed threshold)
+IGN_INPUT_TYPE_1_DESC = Tryb wykorzystywany do obslugi czujnikow indukcyjnych z wykorzystaniem  detekcji przejscia sygnalu przez zero i stalej histerezy 200mV 
+IGN_INPUT_TYPE_2      = Czujnik Optyczny lub Hall 
+IGN_INPUT_TYPE_2_DESC = Tryb wejscia wykorzystywany do obslugi czujnikow optycznych i Halla. 
+IGN_INPUT_TYPE_3      = Inne czujniki
+IGN_INPUT_TYPE_3_DESC = Tryb wejscia wykorzystywany do obslugi inncyh czujnikow indukcyjnych. 
+
+IGN_GENERAL_OPTS_DESC = Max RPM - maksymalna wartosc obrotow mapy.||Ilosc syg. (720 stopni) - ilosc sygnalow zaplonu w pelnym cyklu pracy silnika (720 stopni).||Max zarejstrowane obroty - maksymalne obroty silnika zarejstrowane przez urzadzenie.||Zeruj - wyzerowanie licznika maksymalnych obrotow.||Max opoznienie zaplonu - maksymalny kat opoznienia zaplonu||Max przysp. zaplonu - maksymalny kat przyspieszenia zaplonu
+
+// --------------------- MENU / SETUP / ANLOG INPUTS CONFIG ------------------------------------------------------------------
+
+AI_WND_NAME           = Konfiguracja wejsc analogowych
+AI_ANALOG_1_IN        = Wej. analogowe #1 
+AI_ANALOG_2_IN        = Wej. analogowe #2 
+AI_ANALOG_3_IN        = Wej. analogowe #3 
+AI_ANALOG_4_IN        = Wej. analogowe #4 
+AI_FILTER             = Filtrowanie
+AI_MIN_VALUE          = Minimalna wartosc[V]
+AI_MAX_VALUE          = Maksymalna wartosc[V]
+AI_DESCRIPTION        = W tym menu mozna ustawic limity napiec wejsc analogowych. Odpowiednie dobranie tych limitow zwieksza powierzchnie uzytaczna map 3D. Opcja filtrowanie zalacza filtr cyfrowy pozawalajacy wygladzic zaszumiony sygnal wejsciowy. 
+
+// --------------------- MENU / SETUP / MAPS INPUTS -------------------------------------------------------------------------
+MI_ANALOG_1           = Wej. analogowe #1
+MI_ANALOG_2           = Wej. analogowe #2
+MI_ANALOG_3           = Wej. analogowe #3
+MI_ANALOG_4           = Wej. analogowe #4
+MI_FREQUENCY          = Czestotliwosc
+MI_NONE               = Brak
+MI_DESCRIPTION        = To okno konfiguracji pozwala ustawic jaki sygnal bedzie uzywany jako Deflection , korekcja , a jaki sygnal bedzie modyfikowany przez dana mape
+MI_DISABLE            = Wylacz
+MI_ZERO               = Zero
+MI_WND_NAME           = Konfiguruj mapy
+MI_MODIFY             = Modyfikuj
+MI_LOAD               = Obciazenie
+MI_CORRECTION_1       = Korekcja #1
+MI_CORRECTION_2       = Korekcja #2
+MI_FUEL_TABLE         = Mapa Paliwa
+MI_PWM_1_TABLE        = Mapa PWM #1
+MI_PWM_2_TABLE        = Mapa PWM #2
+MI_IGNITION_TABLE     = Mapa zaplonu
+MI_ANALOG_EXTRA	      = Extra analog input
+
+
+// --------------------- MENU / SETUP / ANALOG OUTPUT CONFIGURATION  -------------------------------------------------------------------------
+
+AO_WND_NAME              = Konfiguracja wyjscia analogowego
+AO_OFFSET                = Przesuniecie [V]
+AO_MIN                   = Minimalne napiecie [V]
+AO_MAX                   = Maxymalne napiecie [V]
+AO_STARTUP_VALUE         = Wartosc startowa [V]
+AO_BASE_UNIT             = Krok modyfikacji napiecia [V]
+AO_FORCE_STARTUP_VOLTAGE = Wymus wartosc startowa
+AO_DESCRIPTION           = Here is description. TO DO !!!!
+
+//-------------------- MENU / SETUP / FREQUENCY CONFIG ----------------------------------------------------------------------------------------
+FC_WND_NAME                     = Konfiguracja czestotliwosci
+FC_TYPE_FRAME                   = Typ modyfikacji czestotliwosci
+FC_PARAMS_FRAME                 = Parametry
+FC_FREQ_MAX                     = Max czest.[Hz]
+FC_FREQ_MIN                     = Min czest.[Hz]
+FC_FREQ_UNIT                    = Jedn. bazowa[Hz]
+FC_RPM_MULTIPLIER               = Mnoznik
+
+FC_MODIFY_DISABLE               = Wylacz
+FC_MODIFY_FREQ_INPUT            = Modyfikuj czest. wejsciowa(mapa paliwa, liniowa)
+FC_MODIFY_FREQ_INPUT_NON_LINEAR = Modyfikuj czest. wejsciowa(mapa paliwa, nie liniowa)
+FC_GENERATE_FREQ_OUTPUR         = Generuj czest. wyjsciowa (mapa paliwa, nie liniowa)
+FC_MODIFY_FREQ_VSS_CLAMP        = Ogranicz czestotliwosc sygnalu VSS
+FC_GENERATE_RPM_OUTPUT          = Generuj wyjscie RPM
+FC_MULTIPLY		        = Mnoz czestotliowsc wejsciowa.
+FC_READ_FREQUENCY		= Odzytuj czestotliwosc
+
+FC_DESC_0                       = Deaktywuj zmiane czestotliwosci
+FC_DESC_1                       = Ten tryb uzywany jest do modyfikacji sygnalu czestotliwosciowego. Czestotliwosc jest ograniczona przez Max czest. i Min czest. oraz modyfikowana jest przez mape paliwa. Minimalna korekcja jest jednostka bazowa w [Hz]
+FC_DESC_2                       = Ten tryb uzywany jest do modyfikacji sygnalu czestotliwosciowego. Czestotliwosc jest ograniczona przez Max czest. i Min czest. oraz modyfikowana jest przez mape paliwa. Minimalna korekcja jest 1Hz dla wartosci 1 w tabeli, lub 100Hz dla wartosci w tabeli 50
+FC_DESC_3                       = Ten tryb uzywany jest do konwersji czestotliwosciowego MAF na MAP. Sygnal wyjsciowy jest generowany na bazie mapy paliwa.
+FC_DESC_4                       = Ten tryb uzywany jest do usuniecia ogranicznika predkosci (ogranicza sygnal VSS).
+FC_DESC_5                       = Ten tryb uzywany jest do generowania czestotliwosci dla cyfrowego oborotomierza na bazie sygnalu RPM. Sygnal wyjsciowy jest iloczynem RPM i Mnoznika.                      
+FC_DESC_6                       = Ten tryb uzywany jest do mnozenia czestotliwosci przez Mnoznik. Czestotliwosc jest ograniczona przez Max czest. i Min czest. 
+FC_DESC_7			= Ten tryb jest uzywany do oczytu czestotliwosci. Moze byæ wykorzystany do sterowania LC za pomoca sygnalu VSS
+//-------------------- MENU / SETUP / USER OUTPUT ----------------------------------------------------------------------------------------
+UO_WINDOW_NAME                = Konfiguracja wyjscia parametrycznego
+
+UO_VALUE_RPM                  = Wartosc[RPM]
+UO_HIST_RPM                   = Hister.[RPM]  
+UO_VALUE_HZ                   = Wartosc[Hz]
+UO_HIST_HZ                    = Hister.[Hz]  
+UO_VALUE_V                    = Wartosc[V]
+UO_HIST_V                     = Hister.[V]  
+
+UO_DESC_FRAME                 = Opis
+U0_DESCRIPTION                = Wyjscie parametryczne pozwala aktywowac przekazniki lub inne urzadzenia bazujac na warunkach zadanych przez uzytkownika. Wyjscie parametryczne korzysta z Wyjscia Mocy #2. Nie zapomnij podlaczyc dodatkowej masy do pinu 19.
+
+UO_SRC1                       = Wejscie 1
+UO_SRC2                       = Wejscie 2
+UO_SRC3                       = Wejscie 3
+UO_CONDITION                  = Warunek
+
+UO_RPM                        = RPM
+UO_ANALOG_OUT                 = Wyj. analogowe
+
+// --------------------- PWM
+PWM_WND_NAME                  = Konfiguracja wyjsc PWM
+PWM_CHN1                      = Kanal #1
+PWM_CHN2                      = Kanal #2
+PWM_FREQUENCY                 = Czestotliwosc PWM[Hz]
+PWM_FAST_PWM                  = Aktywuj szybki PWM (10x)
+PWM_DESCRIPTION               = Mozesz zdefiniowac bazowa czestotliwosc dla wyjscia PWM. Miej na uwadze,ze wyjscia PWM moga byc rowniez uzywane do sterowania wtryskiwaczami lub jako wyjscie parametryczne!
+PWM_DISABLE_INTERPOLATION     = Wylacz interpolacje
+
+// --------------------- LAUNCH CONTROL
+LC_WINDOW_NAME                = Konfiguracja kontroli startu
+LC_FRAME_NAME                 = Kontrola startu
+LC_ACT_INPUT                  = Wejscie aktywujace
+LC_ACT_RPM                    = Aktywujace obroty
+LC_CUT_OFF_RPM                = Obroty odciecia
+LC_IGN_RETARD                 = Opoznienie zaplonu
+LC_FUEL_ENRICHEMENT           = Wzbogacenie mieszanki
+LC_DESCRIPTION                = Aby aktywowac kontrole startu, wybierz wejscie aktywujace. Kontrola startu jest aktywna, gdy napiecie na wejsciu aktywujacym jest wieksze niz 4.8V. 
+LC_FREQU_INPUT		      = Uzyj wejscia czestotliwosciowego
+LC_ALWAYS_ACTIVE	      = Zawsze aktywne
+
+LC_INVERT_INPUT		      = Odwroc wejscie
+LC_ENABLE_VSS_CTRL	      = Aktywuj kontrole VSS
+
+// --------------------- MENU
+MNU_FILE                    = &Plik
+MNU_LOAD_PROJECT            = Otworz p&rojekt...
+MNU_SAVE_PROJECT            = &Zapisz projekt jako...
+MNU_LOAD_LOG                = &Otworz log...
+MNU_SAVE_LOG                = Zapisz &log...
+
+MNU_EXPORT_TO_CVS	    = Wyeksportuj log do pliku CVS...
+MNU_EXPORT_TABLE	    = Wyeksportuj tablice...
+MNU_IMPORT_TABLE	    = Zaimportuj tablice...
+
+
+MNU_MAKE_MAPS_PERMANENT     = Zapisz &mapy w pamieci (F10)
+MNU_UPGRADE_FIRMWARE        = &Aktualizuj firmware...
+MNU_PREFERENCES             = Pre&ferencje...
+MNU_EXIT                    = &Wyjscie
+
+MNU_EDIT                    = Edytuj
+MNU_EDIT_ENTER_VALUE        = Wpisz wartosc
+MNU_EDIT_INCREMENT          = Zwieksz +
+MNU_EDIT_DECREMENT          = Zmniejsz -
+MNU_EDIT_ZERO               = Zero 0
+MNU_EDIT_INTERPOLATE        = Interpoluj
+
+MNU_SETUP                   = Ustawienia
+MNU_SETUP_ANALOG_INPUTS     = Konfiguracja wejsc analogowych...
+MNU_SETUP_ANALOG_OUTPUT     = Konfiguracja wyjsc analogowych...
+MNU_SETUP_MAPS              = Konfiguracja tablic...
+MNU_SETUP_SCALES_CONF       = Konfiguracja skal...
+MNU_SETUP_IGNITION          = Konfiguracja zaplonu...
+MNU_SETUP_FREQUENCY         = Konfiguracja czestotliwosci...
+MNU_SETUP_PWM_OUTPUTS       = Konfiguracja wyjsc PWM...
+MNU_SETUP_INJ_CONTROL       = Konfiguracja kontroli wtryskiwaczy...
+MNU_SETUP_LAUNCH_CTRL       = Konfiguracja kontroli startu...
+MNU_SETUP_USER_OUTPUT       = Konfiguracja wyjscia parametrycznego...
+
+MNU_DYNO                    = Hamownia
+MNU_DYNO_PARAMETERS         = Parametry..
+MNU_DYNO_EXPORT_BMP         = Eksportuj wykres jako BMP...
+MNU_DYNO_EXPORT_CSV         = Eksportuj wykres do pliku CSV...
+
+MNU_HELP                    = Pomoc
+MNU_HELP_ABOUT              = O programie
+
+MNU_OFFLINE_LOG             = Logowanie offline...
+MNU_SELF_TEST               = Auto test...
+
+MNU_TOOLS	            = Narzedzia
+MNU_SCOPE	            = Oscyloskop...
+
+//----------------------- INJ CTRL
+IC_FULLGROUP1              = Wyjscie mocy wtrysku Full group #1
+IC_FULLGROUP2	           = Wyjscie mocy wtrysku Full group #1 and #2
+IC_SEMISEQUENTIAL          = Wyjscie mocy wtrysku polsekwencyjnego #1 and #2
+
+// --------------------- UPGRADE FIRMWARE 
+UF_WINDOW_NAME                = Aktualizuj firmware
+UF_OPEN_DESC                  = Otworz plik zawierajacy uaktualniony firmware. Miej na uwadze,ze uaktualnienie firmware-u wyczysci konfiguracje oraz mapy!
+UF_CURRENT_VERSION            = Aktualna wersja FW:
+UF_VERSION_TO_UPGRADE         = Wersja do akutalizacji: 
+UF_UPGRADE_CONF               = Czy jestes pewien, ze chcesz uaktualnic firmware? Wszystkie tablice oraz konfiguracja beda wyczyszczone!
+UF_FW_HISTORY                 = Historia firmware-u
+UF_OPEN                       = Otworz...
+UF_UPGRADE                    = Aktualizuj
+UF_CANCEL                     = Anuluj
+
+//----------------------- MISC
+MISC_MAKE_PERMANENT          = Zaraz zaktualizujesz mapy i ustawienia w urzadzeniu.|| Urzadzenie moze nie reagowac przez dluzsza chwile!||Prosze wylaczyc silnik!
+MISC_DEVICE_DETECTED         = Urzadzenie Digital ECU Tuner 3 wykryte!||Czy chcesz wczytac tablice oraz konfiguracje urzadzenia?
+MISC_DEVICE_DETECTED_WND_NAME= Urzadzenie wykryte
+MISC_WARNING                 = Uwaga!
+
+//---------------------- TABLES NAME
+TBL_FUEL_MAP                 = Tablica paliwa (F1)
+TBL_PWM_MAP1                 = Tablica PWM #1 (F2)
+TBL_IGN_MAP                  = Tablica zapl. #1 (F3)
+TBL_PWM_MAP2                 = Tablica PWM #2 (F4)
+TBL_LOG                      = Okno logowania (F5)
+TBL_DYNO                     = Hamownia drogowa (F6)
+
+//---------------------- BAR DISPLAY
+BAR_TPS		             = TPS
+BAR_MAP			     = MAP
+BAR_CLT			     = CLT
+BAR_IAT			     = IAT
+
+BAR_RPM                      = RPM
+BAR_AN_1                     = Analogowe #1
+BAR_AN_2                     = Analogowe #2
+BAR_AN_3                     = Analogowe #3
+BAR_AN_4                     = Analogowe #4
+BAR_AN_OUT                   = Wyj. Analogowe
+BAR_PWM_1                    = PWM 1 DC
+BAR_PWM_2                    = PWM 2 DC
+BAR_USER_OUTPUT              = Wyj. param.
+BAR_FREQ_IN                  = Wej. czest.
+BAR_FREQ_OUT                 = Wyj. czest.
+BAR_ACC_VOLT                 = Napiecie aku.
+BAR_INJ_IN                   = Wej. wtrysku
+BAR_INJ_OUT                  = Wyj. wtrysku
+BAR_WARMUP		     = Warmup
+BAR_ASE			     = ASE
+BAR_ACC_ENRICH		     = Acc. enrich
+BAR_TPS_RATE		     = TPS rate
+
+//------------------- LOG LEGEND
+LEG_AN1                     = Analogowe #1
+LEG_AN3                     = Analogowe #3
+LEG_ANO                     = Wyj. Analog.
+LEG_FREQ_IN                 = Wej. czest.
+LEG_INJ_IN                  = Wej. wtrysku
+LEG_IGN_ANG                 = Kat zaplonu
+LEG_PWM1                    = PWM 1 DC
+LEG_ACC_V                   = Napiecie aku.
+LEG_AN2                     = Analogowe #2
+LEG_AN4                     = Analogowe #4
+LEG_RPM                     = RPM
+LEG_FREQ_OUT                = Wej. czest.
+LEG_INJ_OUT                 = Wyj. wtrysku
+LEG_USER_OUT                = Wyj. param.
+LEG_PWM2                    = PWM 2 DC
+LEG_IGN_ERR                 = Blad zaplonu
+LEG_IGN_STATUS              = Status zpalonu
+LEG_TIME                    = Czas
+
+
+LEG_TPS			    = TPS
+LEG_IAT			    = IAT
+LEG_CLT			    = CLT
+LEG_MAP			    = MAP
+LEG_ASE			    = ASE
+LEG_WARMUP		    = Warmup
+LEG_TPS_RATE		    = TPS Rate
+LEG_AE			    = Acc. enrich.
+LEG_SA_STATUS		    = SA Status
+LEG_FCUT		    = Fuel cut
+LEG_AINPUT		    = Analog In
+LEG_NBO_CORR                = NBO Corr.
+
+LEG_BOOSTDC		    = Boost DC
+LEG_VE			    = VE
+LEG_EMPTY	            = . 
+LEG_BOOST_TARGET	    = Boost Targ.
+
+//------------------- PREFERENCES
+PREF_WND_NAME               = Preferencje
+PREF_SELECT_LANGUAGE        = Wybor jezyka
+PREF_VIS_CELL_THRESHOLD     = Prog odwiedzonych komorek
+PREF_CROSS_WIDTH            = Szerokosc wskaznika
+PREF_3D_GRAPH_AUTOSCALE     = Autoskala wykresu 3D
+PREF_DESCRIPTION            = Prog odwiedzonych komorek okresla ile razy komorka musi byc odwiedzioa, aby byla zaznaczona zoltym znakiem.||Autoskala wykresu 3D pozwala na automatyczne skalowanie wykresu 3D aby najlepiej dopasowac go do okna.
+
+//------------------- OFFLINE LOG
+
+OL_STATUS                   = Status
+
+
+//------------------- SCALES CONFIGURATION
+SC_WND_NAME                = Konfiguracja skal
+SC_FRAME_NAME              = Skale
+SC_LOAD                    = Otworz...
+SC_SAVE                    = Zapisz...
+SC_DEFAULT_SCALES          = Domyslne skale
+
+//------------------ INJECTION CTRL
+
+INJ_WINDOW_NAME           = Kontrola wtrysku
+INJ_SETUP_FRAME           = Ustawienia kontroli wtrysku
+INJ_CTRL_TPYE             = Typ kontroli wtrysku
+INJ_OPENING_TIME          = Czas otwarcia wtryskiwacza
+INJ_DESC                  = To be done
+
+//-------------- STAND ALONE ----------------------------------
+TBL_VE_TABLE		  = Tablica VE 
+
+TBL_DESCRIPTION_MAP	  = Bezwzgledne cisnienie w kolektorze ssacy
+TBL_DESCRIPTION_CLT	  = Temperatura cieczy chlodzacej
+TBL_DESCRIPTION_IAT       = Temperatura zasysanego poweitrza
+
+
+//-------------- TABLE SWITCH ----------------------------------
+
+TBL_SWITCH_INPUT_1	  = Wy³¹cz
+TBL_SWITCH_INPUT_2	  = Wejscie Maps switch 
+TBL_SWITCH_INPUT_3	  = Wejscie Frequency in
+ 

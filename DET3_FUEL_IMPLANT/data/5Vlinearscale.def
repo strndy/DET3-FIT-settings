@@ -1,0 +1,20 @@
+// scale definition
+name      = LINEAR VOLTAGE SCALE 0-5V
+
+linearize = 0
+unit      = V 
+
+minValue  = 0
+maxValue  = 5 
+
+// ilosc miejsc po przecinku
+precision = 2
+
+// non linear sensors are defined by equation:
+// value = coef5 * v^5 +  coef4 * v^4 + coef3 * v^3 + coef2 * v^2 + coef1 * v + coef0
+coef0 = 0
+coef1 = 1
+coef2 = 0
+coef3 = 0
+coef4 = 0
+coef5 = 0

@@ -1,0 +1,359 @@
+// --------------------- MENU / SETUP / IGNITION... ------------------------------------------------------------------
+IGN_SETUP_WINDOW_NAME = Ignition configuration
+IGN_IGNITION_MODE     = Ignition mode
+IGN_IGNITION_GENERAL  = General
+IGN_MAX_RPM           = Maximum RPM
+IGN_NUM_EVENTS_PER_720= Num signals per 720
+IGN_MAX_RPM_EVER      = Max RPM ever
+IGN_RESET_RPM         = Reset RPM
+IGN_MAX_RETARD        = Maximum retard(deg)
+IGN_MAX_ADVANCE       = Maximum advance(deg)
+
+
+IGN_MODE_0            = Retard / Advance 60-2 signal
+IGN_MODE_0_DESC       = This ignition mode is suitable for all cars with ignition trigger system based on toothed wheel with 58 teeth and gap with 2 missing teeth (commonly known as 60-2). It is very popular in European cars based on Bosh Motronic systems.  The most common sensor used for this trigger type is VR sensor, however there are systems based on Hall sensor on the market.
+IGN_MODE_1            = Retard / Advance 36-1 signal
+IGN_MODE_1_DESC       = This ignition mode is suitable for all cars with ignition trigger system based on toothed wheel with 36 teeth and gap with 1 missing tooth (commonly known as 36-1). It is commonly used by Ford. For older systems like EEC IV with external EDIS module, it is suggested to use EDIS SAW signal modification.
+IGN_MODE_2            = Retard / Advance 36-2 signal
+IGN_MODE_2_DESC       = This ignition mode is suitable for all cars with ignition trigger system based on toothed wheel with 36 teeth and gap with 2 missing tooth (commonly known as 36-2). 
+IGN_MODE_3            = Retard / Advance multitooth signal
+IGN_MODE_3_DESC       = This ignition mode is suitable for all cars with toothed wheel where the angular distance between teeth is constant and there is 4 or more teeth per engine revolution. 
+IGN_MODE_4            = Retard single signal
+IGN_MODE_4_DESC       = This ignition mode is suitable retarding low resolution signals and signals driving ignition modules. In this mode both edges of signal are considered (eg. proper dwell time). For ignition modules driving signals use Hall effect or optical sensor input type. 
+IGN_MODE_5            = EDIS SAW signal
+IGN_MODE_5_DESC       = This ignition mode is suitable for FORD ignition system based on EDIS module. Ignition can be advanced or retarded by modifying SAW signal. This mode works only with Hall effect or optical sensor input type.
+IGN_MODE_6            = Nissan QG18DE 18-2-18-2 signal
+IGN_MODE_6_DESC       = This ignition mode is suitable for Nissan 1.8L QG18DE engine
+IGN_MODE_7            = Retard two ignition module signals
+IGN_MODE_7_DESC       = This ignition mode is suitable for retarding two ignition module signals. Using this mode freqency input/output is used for second signal. All freqency functions are disable.
+IGN_MODE_8            = Retard non uniform signal
+IGN_MODE_8_DESC       = This ignition mode is suitable for retarding non uniform signals.
+IGN_MODE_9            = Subaru trigger
+IGN_MODE_9_DESC       = Subaru 6 tooth pattern
+IGN_MODE_10           = Honda 12+1
+IGN_MODE_10_DESC      = Honda 12+1 trigger
+IGN_MODE_11           = Scope
+IGN_MODE_11_DESC      = In this mode sensor signal is copied to the igntion outputs, and information about trigger pattern is stored in device memory. This information can be obtained using Scope tool.
+IGN_MODE_12           = Retard / Advance 24-1 signal
+IGN_MODE_12_DESC      = This ignition mode is suitable for all cars with ignition trigger system based on toothed wheel with 24 teeth and gap with 1 missing tooth 
+IGN_MODE_13           = Retard / Advance 60-2 signal Siemens MS
+IGN_MODE_13_DESC      = This ignition mode is suitable for all cars with ignition trigger system based on toothed wheel with 58 teeth and gap with 2 missing teeth (commonly known as 60-2). This mode is limited to advance / retard up to 5 degrees.
+IGN_MODE_14           = EDIS SAW signal absolute
+IGN_MODE_14_DESC      = This ignition mode is suitable for FORD ignition system based on EDIS module, and allows to set absolute ignition angle. Set maximum advance to 50 (BTDC) and maximum retard to 10(ATDC)
+IGN_MODE_15           = Rover 18-1-18-1 signal
+IGN_MODE_15_DESC      = This ignition mode is suitable for Rover 18-1-18-1 pattern
+
+
+ING_INPUT_CONFIG      = Ignition input configuration
+ING_INPUT_TYPE        = Ignition input type
+IGN_INPUT_TYPE_0      = VR Sensor adaptive threshold
+IGN_INPUT_TYPE_0_DESC = Input mode suitable for wide range of VR sensors. Adaptive hysteresis and true zero cross detection makes this mode very immune for potential noise, however it is recommended to use shielded wires.
+IGN_INPUT_TYPE_1      = VR Sensor fixed threshold
+IGN_INPUT_TYPE_1_DESC = Input mode suitable for VR sensors. In this mode there is true zero cross detection and fixed hysteresis at 200mV. It is recommended to use shielded wires.
+IGN_INPUT_TYPE_2      = Hall effect or optical sensor
+IGN_INPUT_TYPE_2_DESC = Input mode suitable for wide range optical and Hall effect sensors with fixed threshold at 2.5V. This mode is also suitable for ignition module drive signals. Lots of sensors are open collector type, so input pullup is required.
+IGN_INPUT_TYPE_3      = Other sensors 
+IGN_INPUT_TYPE_3_DESC = Input mode suitable for VR sensors with fixed threshold at 200mV.
+
+
+IGN_GENERAL_OPTS_DESC = Max RPM - maximum rpm represented on map Y axis.||Num sig. per 720 - number of cran/cam signals per 2 engine revolutions.||Max RPM ever - maximal RPM that was recorded by device.||Reset RPM - reset maximum RPM ever value.||Maximum retard - maximum allowable spark retard||Maximum advance - maximum allowable spark advance.
+
+// --------------------- MENU / SETUP / ANLOG INPUTS CONFIG ------------------------------------------------------------------
+
+AI_WND_NAME           = Analog inputs configuration
+AI_ANALOG_1_IN        = Analog #1 In
+AI_ANALOG_2_IN        = Analog #2 In
+AI_ANALOG_3_IN        = Analog #3 In
+AI_ANALOG_4_IN        = Analog #4 In
+AI_FILTER             = Filter
+AI_MIN_VALUE          = Minimum Value[V]
+AI_MAX_VALUE          = Maximum Value[V]
+AI_DESCRIPTION        = This menu enable limiting of analog signals. Proper limiting is essential for maximum using of tables space. Filter options enable internal digital filter of noisy signal of given analog input. 
+
+// --------------------- MENU / SETUP / MAPS INPUTS -------------------------------------------------------------------------
+MI_ANALOG_1           = Analog in #1
+MI_ANALOG_2           = Analog in #2
+MI_ANALOG_3           = Analog in #3
+MI_ANALOG_4           = Analog in #4
+MI_FREQUENCY          = Frequency
+MI_NONE               = None
+MI_DESCRIPTION        = This configuration window allow to configure what signal will act as deflection, correction and what signal will be modified for given table.
+MI_DISABLE            = Disable
+MI_ZERO               = Zero
+MI_WND_NAME           = Setup tables
+MI_MODIFY             = Modify
+MI_LOAD               = Load
+MI_CORRECTION_1       = Correction #1
+MI_CORRECTION_2       = Correction #2
+MI_FUEL_TABLE         = Fuel Table
+MI_PWM_1_TABLE        = PWM Table #1
+MI_PWM_2_TABLE        = PWM Table #2
+MI_IGNITION_TABLE     = Ignition Table
+MI_ANALOG_EXTRA	      = Extra analog input
+
+// --------------------- MENU / SETUP / ANALOG OUTPUT CONFIGURATION  -------------------------------------------------------------------------
+
+AO_WND_NAME              = Analog output configuration
+AO_OFFSET                = Analog Out Offset [V]
+AO_MIN                   = Analog Out Min [V]
+AO_MAX                   = Analog Out Max [V]
+AO_STARTUP_VALUE         = Startup Voltage [V]
+AO_BASE_UNIT             = Analog signal modification step [V]
+AO_FORCE_STARTUP_VOLTAGE = Force startup output voltage
+AO_DESCRIPTION           = This configuration window allows to configure analog output.||||Analog Out Offset - constant offset addet to analog output voltage.||Analog Out Min - minimum voltage at analog output.||Analog Out Max - maximum voltage at analog output.||Startup Value - voltage at analog output at device startup.||Analog signal modification step - analog output resolution.
+
+//-------------------- MENU / SETUP / FREQUENCY CONFIG ----------------------------------------------------------------------------------------
+FC_WND_NAME                     = Frequency configuration
+FC_TYPE_FRAME                   = Frequency modification type
+FC_PARAMS_FRAME                 = Parameters
+FC_FREQ_MAX                     = Freq. Max[Hz]
+FC_FREQ_MIN                     = Freq. Min[Hz]
+FC_FREQ_UNIT                    = Base unit[Hz]
+FC_RPM_MULTIPLIER               = Multiplier
+
+FC_MODIFY_DISABLE               = Disable
+FC_MODIFY_FREQ_INPUT            = Modify frequency input (fuel map, linear)
+FC_MODIFY_FREQ_INPUT_NON_LINEAR = Modify frequency input nonlinear (fuel map, non linear)
+FC_GENERATE_FREQ_OUTPUR         = Generate frequency output (fuel map, non linear)
+FC_MODIFY_FREQ_VSS_CLAMP        = Clamp VSS frequency signal
+FC_GENERATE_RPM_OUTPUT          = Generate RPM output
+FC_MULTIPLY			= Multiply frequency by Multiplier
+FC_READ_FREQUENCY		= Read frequency
+
+FC_DESC_0                       = Disable any frequency modifications
+FC_DESC_1                       = This mode is used for frequency signal modification. The frequency is clamped to Freq. Max and Freq. Min value, and modified (in additive way) using Fuel Map table. Base unit is the minimal step in Hertz of modification. 
+FC_DESC_2                       = This mode is used for frequency signal modification. The frequency is clamped to Freq. Max and Freq. Min value, and modified (in additive way) using Fuel Map table. The minimal step is non linear and is 1Hz for table value 1, 100Hz for table value 50, 
+FC_DESC_3                       = This mode is used for frequency MAF to MAP conversion. The output signal is generated based on Fuel Map. 
+FC_DESC_4                       = This mode is used for removing speed limit (clamping VSS signal frequency).
+FC_DESC_5                       = This mode is used for generating frequency output used for digital tachometers based on RPM signal. Output frequency equals to (RPM / 60) * Multiplier.                      
+FC_DESC_6			= This mode is used for frequency signal multiplication by Multiplier. The frequency is clamped to Freq. Max and Freq. Min value
+FC_DESC_7			= This mode is used for read frequency signal. It can be used for control launch control by VSS input.
+
+//-------------------- MENU / SETUP / USER OUTPUT ----------------------------------------------------------------------------------------
+UO_WINDOW_NAME                = Parametric output configuration
+
+UO_VALUE_RPM                  = Value[RPM]
+UO_HIST_RPM                   = Hist.[RPM]
+UO_VALUE_HZ                   = Value[Hz]
+UO_HIST_HZ                    = Hist.[Hz]
+UO_VALUE_V                    = Value[V]
+UO_HIST_V                     = Hist.[V]
+
+UO_DESC_FRAME                 = Description
+U0_DESCRIPTION                = Parametric output allows to activate selenoids or other devices, according to user defined conditions. Parametric output is mapped onto Power Out #2. Do not forget to connect additional ground to pin 19.
+
+UO_SRC1                       = Source 1
+UO_SRC2                       = Source 2
+UO_SRC3			      = Source 3
+UO_CONDITION                  = Condition
+
+UO_RPM                        = RPM
+UO_ANALOG_OUT                 = Analog out
+
+// --------------------- PWM
+PWM_WND_NAME                  = PWM outputs configuration
+PWM_CHN1                      = Channel #1
+PWM_CHN2                      = Channel #2
+PWM_FREQUENCY                 = PWM frequency [Hz]
+PWM_FAST_PWM                  = Enable fast PWM (10x)
+PWM_DESCRIPTION               = You can define base frequency for PWM output. Be aware that PWM outputs can be also used for injectors control and parametric output!
+PWM_DISABLE_INTERPOLATION     = Disable interpolation
+
+// --------------------- LAUNCH CONTROL
+LC_WINDOW_NAME                = Launch control configuration
+LC_FRAME_NAME                 = Launch control
+LC_ACT_INPUT                  = Activation input
+LC_ACT_RPM                    = Activation RPM
+LC_CUT_OFF_RPM                = Cut off RPM
+LC_IGN_RETARD                 = Ignition retard
+LC_FUEL_ENRICHEMENT           = Fuel enrichment
+LC_DESCRIPTION                = To activate launch control select activation input. Launch control is active when the voltage on selected input is greater than 4.8V. 
+LC_FREQU_INPUT		      = Use frequency input
+LC_ALWAYS_ACTIVE	      = Always active
+LC_INVERT_INPUT		      = Invert input
+LC_ENABLE_VSS_CTRL	      = Enable VSS input
+
+// --------------------- MENU
+MNU_FILE                    = &File
+MNU_LOAD_PROJECT            = Load &project...
+MNU_SAVE_PROJECT            = &Save project as...
+MNU_LOAD_LOG                = &Load log...
+MNU_SAVE_LOG                = Save l&og...
+
+MNU_EXPORT_TO_CVS	    = Export log to CVS...
+MNU_EXPORT_TABLE	    = Export table...
+MNU_IMPORT_TABLE	    = Import table...
+
+MNU_MAKE_MAPS_PERMANENT     = &Make maps permanent (F10)
+MNU_UPGRADE_FIRMWARE        = &Upgrade firmware...
+MNU_PREFERENCES             = &Preferences...
+MNU_EXIT                    = E&xit
+
+MNU_EDIT                    = Edit
+MNU_EDIT_ENTER_VALUE        = Enter value
+MNU_EDIT_INCREMENT          = Increment + 
+MNU_EDIT_DECREMENT          = Decrement -
+MNU_EDIT_ZERO               = Zero 0
+MNU_EDIT_INTERPOLATE        = Interpolate
+
+MNU_SETUP                   = Setup
+MNU_SETUP_ANALOG_INPUTS     = Analog inputs configuration...
+MNU_SETUP_ANALOG_OUTPUT     = Analog output configuration...
+MNU_SETUP_MAPS              = Setup tables...
+MNU_SETUP_SCALES_CONF       = Scales configuration...
+MNU_SETUP_IGNITION          = Ignition configuration...
+MNU_SETUP_FREQUENCY         = Frequency configuration...
+MNU_SETUP_PWM_OUTPUTS       = PWM outputs configuration...
+MNU_SETUP_INJ_CONTROL       = Injection control configuration...
+MNU_SETUP_LAUNCH_CTRL       = Launch control configuration...
+MNU_SETUP_USER_OUTPUT       = Parametric output configuration...
+
+MNU_DYNO                    = Dyno
+MNU_DYNO_PARAMETERS         = Parameters..
+MNU_DYNO_EXPORT_BMP         = Export dyno graph as BMP...
+MNU_DYNO_EXPORT_CSV         = Export dyno graph to CSV file...
+
+MNU_HELP                    = Help
+MNU_HELP_ABOUT              = About
+
+MNU_OFFLINE_LOG             = Offline log...
+MNU_SELF_TEST               = Self test...
+
+MNU_TOOLS	            = Tools
+MNU_SCOPE		    = Scope...
+
+//----------------------- INJ CTRL
+IC_FULLGROUP1              = Full group input Power Output #1
+IC_FULLGROUP2	           = Full group input Power Output #1 and #2
+IC_SEMISEQUENTIAL          = Semisequential input, Power Output #1 and #2
+
+// --------------------- UPGRADE FIRMWARE 
+UF_WINDOW_NAME                = Upgrade firmware
+UF_OPEN_DESC                  = Open file contains firmware update. Be aware that firmware upgrade will clear permanently all your tables and configuration data!
+UF_CURRENT_VERSION            = Current FW version:
+UF_VERSION_TO_UPGRADE         = Version to upgrade: 
+UF_UPGRADE_CONF               = Are you sure you want to upgrade firmware? All your tables and configuration will be lost!
+UF_FW_HISTORY                 = Firmware history
+UF_OPEN                       = Open...
+UF_UPGRADE                    = Upgrade
+UF_CANCEL                     = Cancel
+
+//----------------------- MISC
+MISC_MAKE_PERMANENT          = You are about storing settings and tables into device.||The device may not respond for a while!||Please turn your engine off!
+MISC_DEVICE_DETECTED         = Digital ECU Tuner 3 device detected!||Would you like to download tables and configuration from device?
+MISC_DEVICE_DETECTED_WND_NAME= Device detected
+MISC_WARNING                 = Warning!
+
+//---------------------- TABLES NAME
+TBL_FUEL_MAP                 = Fuel Table (F1)
+TBL_PWM_MAP1                 = PWM Table #1 (F2)
+TBL_IGN_MAP                  = Ign. Table #1 (F3)
+TBL_PWM_MAP2                 = PWM Table #2 (F4)
+TBL_LOG                      = Log Window(F5)
+TBL_DYNO                     = Road Dyno (F6)
+
+//---------------------- BAR DISPLAY
+BAR_TPS		             = TPS
+BAR_MAP			     = MAP
+BAR_CLT			     = CLT
+BAR_IAT			     = IAT
+BAR_RPM                      = RPM
+BAR_AN_1                     = Analog #1
+BAR_AN_2                     = Analog #2
+BAR_AN_3                     = Analog #3
+BAR_AN_4                     = Analog #4
+BAR_AN_OUT                   = Analog Out
+BAR_PWM_1                    = PWM 1 DC
+BAR_PWM_2                    = PWM 2 DC
+BAR_USER_OUTPUT              = Param. Out.
+BAR_FREQ_IN                  = Freq. In
+BAR_FREQ_OUT                 = Freq. Out
+BAR_ACC_VOLT                 = Acc. Volt.
+BAR_INJ_IN                   = Inj. In
+BAR_INJ_OUT                  = Inj. Out
+BAR_WARMUP		     = Warmup 
+BAR_ASE			     = ASE
+BAR_ACC_ENRICH		     = Acc. enrich
+BAR_TPS_RATE		     = TPS rate
+
+//------------------- LOG LEGEND
+LEG_AN1                     = Analog #1
+LEG_AN3                     = Analog #3
+LEG_ANO                     = Analog Out
+LEG_FREQ_IN                 = Freq. In
+LEG_INJ_IN                  = Injection In
+LEG_IGN_ANG                 = Ign. Angle
+LEG_PWM1                    = PWM 1 DC
+LEG_ACC_V                   = Acc. Voltage
+LEG_AN2                     = Analog #2
+LEG_AN4                     = Analog #4
+LEG_RPM                     = RPM
+LEG_FREQ_OUT                = Freq. Out
+LEG_INJ_OUT                 = Inj. Out
+LEG_USER_OUT                = Param. Out.
+LEG_PWM2                    = PWM 2 DC
+LEG_IGN_ERR                 = Ign. Error
+LEG_IGN_STATUS              = Ign. Status
+LEG_TIME                    = Time
+
+
+LEG_TPS			    = TPS
+LEG_IAT			    = IAT
+LEG_CLT			    = CLT
+LEG_MAP			    = MAP
+LEG_ASE			    = ASE
+LEG_WARMUP		    = Warmup
+LEG_TPS_RATE		    = TPS Rate
+LEG_AE			    = Acc. enrich.
+LEG_SA_STATUS		    = SA Status
+LEG_FCUT		    = Fuel cut
+LEG_AINPUT		    = Analog In
+LEG_NBO_CORR                = NBO Corr.
+
+LEG_BOOSTDC		    = Boost DC
+LEG_VE			    = VE
+LEG_EMPTY	            = .
+LEG_BOOST_TARGET	    = Boost Targ.
+
+//------------------- PREFERENCES
+PREF_WND_NAME               = Preferences
+PREF_SELECT_LANGUAGE        = Select language
+PREF_VIS_CELL_THRESHOLD     = Visited cells thresholds
+PREF_CROSS_WIDTH            = Pointing cross width
+PREF_3D_GRAPH_AUTOSCALE     = 3D Graph autoscale
+PREF_DESCRIPTION            = Visited cells thresholds defines how many times cell must be visited to put yellow mark on it.||3D Graph autoscale allow automatic scale of 3D graph to best fit its bounding box.
+
+//------------------- OFFLINE LOG
+
+OL_STATUS                   = Status
+
+
+//------------------- SCALES CONFIGURATION
+SC_WND_NAME                = Scales configuration
+SC_FRAME_NAME              = Scales
+SC_LOAD                    = Load...
+SC_SAVE                    = Save...
+SC_DEFAULT_SCALES          = Default scales
+
+//------------------ INJECTION CTRL
+
+INJ_WINDOW_NAME           = Injectors control
+INJ_SETUP_FRAME           = Injectors control setup
+INJ_CTRL_TPYE             = Injectors control type
+INJ_OPENING_TIME          = Injector opening time
+INJ_DESC                  = To be done
+
+
+//-------------- STAND ALONE ----------------------------------
+TBL_VE_TABLE		  = VE Table(F2)
+
+TBL_DESCRIPTION_MAP	  = Manifold absolute pressure
+TBL_DESCRIPTION_CLT	  = Coolant temperature
+TBL_DESCRIPTION_IAT       = Intake air temperature
+
+
+//-------------- TABLE SWITCH ----------------------------------
+
+TBL_SWITCH_INPUT_1	  = Disable
+TBL_SWITCH_INPUT_2	  = Maps switch input
+TBL_SWITCH_INPUT_3	  = Frequency in input

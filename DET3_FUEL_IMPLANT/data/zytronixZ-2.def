@@ -1,0 +1,21 @@
+// scale definition
+name      = ZYTRONIX WB AFR ZT2
+
+
+linearize = 0
+unit      = AFR
+
+minValue  = 10
+maxValue  = 20 
+
+// ilosc miejsc po przecinku
+precision = 1
+
+// non linear sensors are defined by equation:
+// value = coef5 * v^5 +  coef4 * v^4 + coef3 * v^3 + coef2 * v^2 + coef1 * v + coef0
+coef0 = 9.9791
+coef1 = -1.4128
+coef2 = 4.0738
+coef3 = -2.1832
+coef4 = 0.4377
+coef5 = 0

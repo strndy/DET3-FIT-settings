@@ -1,0 +1,22 @@
+// scale definition
+name      = BOSCH NTC M12-L 0280130039
+
+linearize = 0
+unit      = C
+
+minValue  = -50
+maxValue  = 130 
+
+// ilosc miejsc po przecinku
+precision = 1
+
+// non linear sensors are defined by equation:
+// value = coef5 * v^5 +  coef4 * v^4 + coef3 * v^3 + coef2 * v^2 + coef1 * v + coef0
+coef0 =  146.33
+coef1 = -138.71
+coef2 =	 80.706
+coef3 = -27.702
+coef4 =  4.7646
+coef5 = -0.3282
+
+//y = -0,3282x5 + 4,7646x4 - 27,702x3 + 80,706x2 - 138,71x + 146,33

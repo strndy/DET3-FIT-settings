@@ -1,0 +1,21 @@
+// scale definition
+name      = MOTOROLA MPX4250 MAP SENSOR
+
+linearize = 0
+unit      = BAR
+
+minValue  = -0.8
+maxValue  = 1.5 
+
+// ilosc miejsc po przecinku
+precision = 2
+
+// non linear sensors are defined by equation:
+// value = coef5 * v^5 +  coef4 * v^4 + coef3 * v^3 + coef2 * v^2 + coef1 * v + coef0
+coef0 = -0.8
+coef1 = 0.46
+coef2 = 0
+coef3 = 0
+coef4 = 0
+coef5 = 0
+

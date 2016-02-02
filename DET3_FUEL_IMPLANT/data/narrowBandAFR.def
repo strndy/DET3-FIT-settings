@@ -1,0 +1,22 @@
+// scale definition
+name      = NARROW BAND O2 SENSOR 0-1V
+
+linearize = 0
+unit      = AFR
+
+minValue  = 8
+maxValue  = 20 
+
+// ilosc miejsc po przecinku
+precision             = 1
+
+// this is required only for 02 narrow band sensor, what cannot be defined by polynomial function
+isNarrowBandO2Sensor  = 1
+
+coef0 = 0
+coef1 = 0
+coef2 = 0
+coef3 = 0
+coef4 = 0
+coef5 = 0
+
